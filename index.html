@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="/CSS/mobile.css"
+    />
     <title>Mi Portafolio</title>
   </head>
   <body>
@@ -11,31 +17,31 @@
       <nav id="navbar">
         <div class="container">
           <a href="#mainheader" class="logo">
-            <img src="/img/fondo.png" alt="" width="500px" height="=400px" />
+            <img src="/img/logo.jpg" alt="" />
           </a>
           <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="BarNav"><a href="#projects">Proyectos</a></li>
+            <li class="BarNav"><a href="#about">Sobre mí</a></li>
+            <li class="BarNav"><a href="#contact">Contacto</a></li>
           </ul>
         </div>
       </nav>
       <div id="showcase">
         <div class="container">
-          <a href="#projects" class="btn btn-outline">Projects</a>
+          <a href="#projects" class="btn btn-outline">Proyectos</a>
         </div>
       </div>
     </header>
 
     <section id="projects">
       <div class="container">
-        <h2>Projects</h2>
+        <h2>Proyectos</h2>
         <div class="projects-row">
           <div class="projects-row-detail">
-            <img src="/img/fondo.png" alt="" width="500px" height="=400px" />
+            <img src="/img/proyecto1.PNG" alt="" />
           </div>
           <div class="projects-row-detail">
-            <img src="/img/fondo.png" alt="" width="500px" height="=400px" />
+            <img src="/img/proyecto2.png" alt="" />
           </div>
           <div class="projects-row-detail">
             <img src="/img/fondo.png" alt="" width="500px" height="=400px" />
@@ -46,28 +52,92 @@
 
     <section id="about">
       <div class="container">
-        <h2>About</h2>
+        <h2>Sobre mí</h2>
         <div class="about-row">
           <div class="about-row-experience">
-            <p class="large">Development Brothers - 2019</p>
-            <p class="large">Astrix Development - 2020</p>
-            <p class="large">Creative Union - 2022</p>
-            <div class="about-row-me">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                voluptas alias inventore voluptates fuga veritatis saepe
-                excepturi quos iusto porro soluta quaerat pariatur repudiandae
-                harum rerum, impedit suscipit tenetur ad sint eveniet earum
-                placeat. Unde ipsa exercitationem laboriosam earum dolorem
-                minima maxime non sunt doloremque laudantium, reiciendis itaque
-                beatae quia quisquam aliquid iure accusamus delectus impedit quo
-                repellendus tempore! Animi!
-              </p>
-            </div>
+            <h4>Experiencia</h4>
+            <p class="large">
+              Cuento con experiencia laboral de 1 año como Analista de Soporte,
+              dando soporte de aplicaciones web y de escritorio, encargado de
+              brindar soporte para la resolución de fallas de los aplicativos,
+              configuración de nuevos usuarios, capacitación del uso de las
+              aplicaciones y manejo de base de datos. <br />
+              He creado algunas aplicaciones de escritorio con Windows Forms y
+              C#, y tengo experiencia empirica en creación de aplicaciones web
+              con HTM, CSS y JavaScript. <br />
+              Conocimientos en creación de base de datos relacionales con SQL
+              Server y MySQL, asi como creación de procedimientos almacenados y
+              consultas.
+            </p>
+          </div>
+          <div class="about-row-me">
+            <h4>Sobre mí</h4>
+            <p>
+              Mi nombre es Santiago Pérez, soy Tecnólogo en Análisis y
+              Desarrollo de Sistemas de Información; tengo conocimientos en
+              lenguajes de programación como: C#, JavaScript, SQL. También
+              cuento con conocimientos de desarrollo web con ASP.NET, HTML Y
+              CSS, desarrollo de aplicaciopnes de escritorio con Windows Forms,
+              manejo y creacion de base de datos. <br />
+              Me apasiona el mundo de la tecnología y toda el area del
+              desarrollo de software, soy una persona autodidacta que le gusta
+              estar en constante aprendizaje, con ganas de seguir avanzando en
+              la programación y aprender tecnologias que me ayuden a crear
+              mejores soluciones de acuerdo a los requerimientos que se
+              soliciten. <br />
+              Creé este portafolio para poder practicar mis conocimientos y
+              habilidades e ir actualizandolo con nuevas funcionalidades, para
+              dar a conocer las habilidades y experiencias que vaya aprendiendo
+              en el camino.
+            </p>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="contact-row">
+          <div class="contact-row-icon">
+            <img src="/img/icon-address.png" alt="" />
+            <p>Medellín, Colombia</p>
+          </div>
+          <div class="contact-row-icon">
+            <img src="/img/icon-mail.png" alt="" />
+            <p>perezsantiago150@gmail.com</p>
+          </div>
+          <div class="contact-row-icon">
+            <img src="/img/icon-phone.png" alt="" />
+            <p>000-000-0000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="mainfooter">
+      <div class="container">
+        <a
+          href="https://twitter.com/TheSanty97"
+          class="twitter-follow-button"
+          data-show-count="false"
+          >Follow @TheSanty97
+        </a>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <div class="container">
+        <a
+          href="https://www.linkedin.com/in/santiago-manuel-perez-martinez-a48966180/"
+          class="buttonIN"
+          >in|LinkedIn
+        </a>
+      </div>
+    </footer>
+    <div class="autor">Copyright &copy; 2022 - TheSanty97</div>
 
     <script src="app.js"></script>
   </body>

@@ -1,0 +1,47 @@
+#projects,
+#about,
+#contact {
+    padding: 50px 0;
+}
+
+/* About */
+#about p,
+#about h4 {
+    text-align: center;
+}
+
+.about-row {
+    flex-wrap: wrap;
+}
+
+.about-row-experience,
+.about-row-me {
+    width: 100%;
+    padding-left: 0;
+}
+
+/* Contact */
+#contact p {
+    font-size: 14px;
+}
+
+/*Boton*/
+.btn {
+    display: inline-block;
+    font-size: 12px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #000;
+}
