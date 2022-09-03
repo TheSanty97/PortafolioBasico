@@ -64,9 +64,18 @@ html {
     display: inline-block;
     margin-left: 10px;
     transition: .5s;
+    font-size: 25px;
 }
 
-#inicio .contenido header .contenido-header .redes a:hover {
+#inicio .contenido header .contenido-header .redes a:hover #linkedin{
+    color: #0e76a8;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover #facebook {
+    color: #3b5998;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover #instagram {
     color: #ff5080;
 }
 
@@ -86,7 +95,7 @@ html {
 }
 
 #inicio .contenido .presentacion .bienvenida {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -226,17 +235,18 @@ html {
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
+    margin-bottom: 60px;
 }
 
 #servicios .fila {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     max-width: 1100px;
     margin: 30px auto;
 }
 
 #servicios .fila .servicio {
-    max-width: 350px;
+    max-width: 450px;
     background-color: #fff;
     padding: 30px;
     margin: 0 5px;
@@ -250,7 +260,7 @@ html {
 
 #servicios .fila .servicio h4 {
     font-size: 22px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 #servicios .fila .servicio .icono {
@@ -274,7 +284,7 @@ html {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 #servicios .fila .servicio p {
@@ -284,7 +294,7 @@ html {
 
 /*SECCION HABILIDADES*/
 .contenedor-skills {
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16.8)), url("/img/fondo-inicio.jpg");
+    background: linear-gradient(#3c0569cc, rgb(95, 35, 39)), url("/img/fondo-inicio.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -293,9 +303,15 @@ html {
     text-align: center;
 }
 
+.contenedor-skills h3 {
+    color: white;
+    font-size: 30px;
+}
+
 .contenedor-skills .skill {
     max-width: 600px;
     margin: 30px auto;
+    color: white;
 }
 
 .contenedor-skills .skill .info {
@@ -321,28 +337,28 @@ html {
 /*Este estilo se aplica medienate JavaScript para dar animacion a la barra*/
 .contenedor-skills .skill .barra-progreso1 {
     background-color: #fff;
-    width: 95%;
+    width: 60%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso2 {
     background-color: #fff;
-    width: 90%;
+    width: 60%;
     height: 6px;
     animation: progreso2 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso3 {
     background-color: #fff;
-    width: 90%;
+    width: 70%;
     height: 6px;
     animation: progreso3 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso4 {
     background-color: #fff;
-    width: 70%;
+    width: 60%;
     height: 6px;
     animation: progreso4 2s forwards;
 }
@@ -354,7 +370,7 @@ html {
     }
 
     100% {
-        width: 95%;
+        width: 60%;
     }
 }
 
@@ -364,7 +380,7 @@ html {
     }
 
     100% {
-        width: 90%;
+        width: 60%;
     }
 }
 
@@ -374,7 +390,7 @@ html {
     }
 
     100% {
-        width: 90%;
+        width: 70%;
     }
 }
 
@@ -384,7 +400,7 @@ html {
     }
 
     100% {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -403,6 +419,7 @@ html {
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
+    margin-bottom: 80px;
 }
 
 #portafolio .fila {
@@ -412,7 +429,7 @@ html {
 }
 
 #portafolio .fila .proyecto {
-    max-width: 450px;
+    max-width: 550px;
     border: 1px solid #000;
     margin: 0 10px;
     position: relative;
@@ -524,6 +541,21 @@ footer a {
     font-size: 26px;
 }
 
+footer a:hover #linkedin{
+    text-decoration: none;
+    color: #0e76a8;
+}
+
+footer a:hover #facebook{
+    text-decoration: none;
+    color: #3b5998;
+}
+
+footer a:hover #instagram{
+    text-decoration: none;
+    color: #ff5080;
+}
+
 /*SECCION RESPONSIVE*/
 @media screen and (max-width:800px) {
     .redes {
@@ -626,7 +658,7 @@ footer a {
         margin-bottom: 15px;
     }
     #contact p {
-            font-size: 14px;
+        font-size: 14px;
     }
 }
 
