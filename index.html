@@ -3,101 +3,255 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      ,
+      user-scalable="no"
+    />
     <link
       rel="stylesheet"
-      media="screen and (max-width:768px)"
-      href="/CSS/mobile.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/CSS/estilo.css" />
     <title>Mi Portafolio</title>
   </head>
+
   <body>
-    <header id="mainheader">
-      <nav id="navbar">
-        <div class="container">
-          <a href="#mainheader" class="logo">
-            <img src="/img/logo.jpg" alt="" />
-          </a>
-          <ul>
-            <li class="BarNav"><a href="#projects">Proyectos</a></li>
-            <li class="BarNav"><a href="#about">Sobre mí</a></li>
-            <li class="BarNav"><a href="#contact">Contacto</a></li>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>TheSanty97</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                </li>
+                <li>
+                  <a href="#portafolio" onclick="seleccionar(this)"
+                    >PORTAFOLIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- ICONOS DEL MENU RESPONSIVE -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- ICONOS DE LAS REDES SOCIALES -->
+            <div class="redes">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>
+            Soy <span>Santiago Pérez</span>, Tecnólogo en análisis y desarrollo
+            de sistemas de información.
+          </h2>
+          <p class="descripcion">
+            Cuento con experiencia como analista de soporte, brindando soporte
+            de aplicaciones web y de escritorio, experiencia empirica en
+            desarrollo de aplicaciones de escritorio con C# y Windows Forms, asi
+            como tambien desarrollo de aplicaciones Web con ASP.Net y HTML, CSS
+            y JavaScript y amplios conocimientos en SQL para gestión de bases de
+            datos.
+          </p>
+          <a href="#portafolio">Ir al portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/foto.jpg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, soy <span>Santiago Perez</span></h2>
+        <h3>Tecnólogo en análisis y desarrollo de sistemas de información</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+          quasi cumque autem vitae non beatae qui quas dolores optio aliquid
+          adipisci, id sed unde in fuga perspiciatis voluptates sapiente nulla!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+          minima voluptatum ratione temporibus reprehenderit, eum esse nisi
+          quis. Dolorem magni pariatur repellendus ducimus.
+        </p>
+        <a href="#">Descarga CV</a>
+      </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+      <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-code"></i></span>
+          <h4>Diseño de sitios Web</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Web</li>
           </ul>
-        </div>
-      </nav>
-      <div id="showcase">
-        <div class="container">
-          <a href="#projects" class="btn btn-outline">Proyectos</a>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+            accusantium animi nihil necessitatibus totam repudiandae velit optio
+            impedit libero nemo. Veniam ipsa tempore nulla est modi adipisci ab,
+            accusamus quaerat!
+          </p>
         </div>
       </div>
-    </header>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-code"></i></span>
+          <h4>Diseño de sitios Web</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Web</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+            accusantium animi nihil necessitatibus totam repudiandae velit optio
+            impedit libero nemo. Veniam ipsa tempore nulla est modi adipisci ab,
+            accusamus quaerat!
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <section id="projects">
-      <div class="container">
-        <h2>Proyectos</h2>
-        <div class="projects-row">
-          <div class="projects-row-detail">
-            <img src="/img/proyecto1.PNG" alt="" />
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>HTML & CSS</p>
+          <span class="porcentaje">95%</span>
+        </div>
+        <div class="barra">
+          <div id="html" class="barra-progreso1"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>JAVASCRIPT</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="js" class="barra-progreso2"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>BASES DE DATOS</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="bd" class="barra-progreso3"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>C#</p>
+          <span class="porcentaje">70%</span>
+        </div>
+        <div class="barra">
+          <div id="c#" class="barra-progreso4"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio">
+      <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto1.jpg" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Diseño de Escritorio</p>
           </div>
-          <div class="projects-row-detail">
-            <img src="/img/proyecto2.png" alt="" />
-          </div>
-          <div class="projects-row-detail">
-            <img src="/img/fondo.png" alt="" width="500px" height="=400px" />
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto2.jpg" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Diseño Web</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about">
-      <div class="container">
-        <h2>Sobre mí</h2>
-        <div class="about-row">
-          <div class="about-row-experience">
-            <h4>Experiencia</h4>
-            <p class="large">
-              Cuento con experiencia laboral de 1 año como Analista de Soporte,
-              dando soporte de aplicaciones web y de escritorio, encargado de
-              brindar soporte para la resolución de fallas de los aplicativos,
-              configuración de nuevos usuarios, capacitación del uso de las
-              aplicaciones y manejo de base de datos. <br />
-              He creado algunas aplicaciones de escritorio con Windows Forms y
-              C#, y tengo experiencia empirica en creación de aplicaciones web
-              con HTM, CSS y JavaScript. <br />
-              Conocimientos en creación de base de datos relacionales con SQL
-              Server y MySQL, asi como creación de procedimientos almacenados y
-              consultas.
-            </p>
+    <!-- SECCION CONTACTO -->
+    <div id="contacto">
+      <h3 class="titulo-seccion">Contactame ahora</h3>
+      <div class="contenedor-form">
+        <form action="">
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Nombre Completo"
+              class="input-mitad"
+            />
+            <input
+              type="text"
+              placeholder="Correo Electronico"
+              class="input-mitad"
+            />
           </div>
-          <div class="about-row-me">
-            <h4>Sobre mí</h4>
-            <p>
-              Mi nombre es Santiago Pérez, soy Tecnólogo en Análisis y
-              Desarrollo de Sistemas de Información; tengo conocimientos en
-              lenguajes de programación como: C#, JavaScript, SQL. También
-              cuento con conocimientos de desarrollo web con ASP.NET, HTML Y
-              CSS, desarrollo de aplicaciopnes de escritorio con Windows Forms,
-              manejo y creacion de base de datos. <br />
-              Me apasiona el mundo de la tecnología y toda el area del
-              desarrollo de software, soy una persona autodidacta que le gusta
-              estar en constante aprendizaje, con ganas de seguir avanzando en
-              la programación y aprender tecnologias que me ayuden a crear
-              mejores soluciones de acuerdo a los requerimientos que se
-              soliciten. <br />
-              Creé este portafolio para poder practicar mis conocimientos y
-              habilidades e ir actualizandolo con nuevas funcionalidades, para
-              dar a conocer las habilidades y experiencias que vaya aprendiendo
-              en el camino.
-            </p>
+          <div class="fila">
+            <input type="text" placeholder="Tema..." class="input-full" />
           </div>
-        </div>
-      </div>
-    </section>
+          <div class="fila">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu Mensaje..."
+              class="input-full"
+            ></textarea>
+          </div>
 
+          <input type="button" value="Enviar Mensaje" class="btn-enviar" />
+        </form>
+      </div>
+    </div>
+
+    <!-- SECCION ICONOS DE CONTACTO -->
     <section id="contact">
       <div class="container">
-        <h2>Contacto</h2>
         <div class="contact-row">
           <div class="contact-row-icon">
             <img src="/img/icon-address.png" alt="" />
@@ -115,30 +269,16 @@
       </div>
     </section>
 
-    <footer id="mainfooter">
-      <div class="container">
-        <a
-          href="https://twitter.com/TheSanty97"
-          class="twitter-follow-button"
-          data-show-count="false"
-          >Follow @TheSanty97
-        </a>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        ></script>
-      </div>
-      <div class="container">
-        <a
-          href="https://www.linkedin.com/in/santiago-manuel-perez-martinez-a48966180/"
-          class="buttonIN"
-          >in|LinkedIn
-        </a>
+    <!-- SECCION FOOTER -->
+    <footer>
+      <div class="autor">Copyright &copy; 2022 - TheSanty97</div>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
       </div>
     </footer>
-    <div class="autor">Copyright &copy; 2022 - TheSanty97</div>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
