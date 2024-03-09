@@ -521,6 +521,10 @@ html {
     font-weight: bold;
 }
 
+#nombreInicio {
+  color: #ff5080;
+}
+
 #contacto .btn-enviar:hover {
     background-color: #ff5080;
     color: #fff;
